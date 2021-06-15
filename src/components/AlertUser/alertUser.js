@@ -1,4 +1,5 @@
 import React from 'react'
+import './alertUser.css';
 
 const AlertUser = (props) => {
    return (
