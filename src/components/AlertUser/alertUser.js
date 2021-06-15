@@ -1,9 +1,9 @@
 import React from 'react'
 
-const AlertUser = () => {
+const AlertUser = (props) => {
    return (
       <div>
-         
+         <button onClick={props.alertMe}>Alert Me</button>
       </div>
    )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SuperHeroTable = () => {
+const SuperHeroTable = (props) => {
    return (
       <div>
          
