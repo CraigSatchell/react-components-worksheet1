@@ -11,9 +11,7 @@ function App() {
       lastName: 'White'
     },
 
-    names: {
-      names: ['Mike', 'Nevin', 'Aaron', 'Tory', 'Kellie']
-    },
+    names: ['Mike', 'Nevin', 'Aaron', 'Tory', 'Kellie'],
 
     superheroes: [
       {
@@ -39,13 +37,14 @@ function App() {
 
   const displayAlert = () => {
     alert('devCodeCamp');
-}
+  }
 
   return (
     <div className="App">
-      <DisplayName firstName={state.person.firstName} lastName={state.person.lastName}/>
+      <DisplayName firstName={state.person.firstName} lastName={state.person.lastName} />
       <NameList names={state.names} />
       <AlertUser alertMe={displayAlert} />
+      <SuperHeroTable heros={state.superheroes} />
     </div>
   );
 }
